@@ -23,12 +23,12 @@ public struct LoggingConfiguration: Codable {
 }
 
 public struct DBConfiguration: Codable {
-    let name: String?
-    let host: String?
-    let port: Int?
-    let user: String?
-    let pass: String?
-    let driverType: DBDriverType
+    public let name: String?
+    public let host: String?
+    public let port: Int?
+    public let user: String?
+    public let pass: String?
+    public let driverType: DBDriverType
 }
 
 public enum DBDriverType: Int, Codable {
