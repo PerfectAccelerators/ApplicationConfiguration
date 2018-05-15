@@ -4,7 +4,7 @@ import Foundation
 public struct Configuration: Codable {
     let server: ServerConfiguration?
     let logging: LoggingConfiguration?
-    let db: DBConfiguration?
+    public let db: DBConfiguration?
     let ssl: SSLConfiguration?
     let os: OS?
     let environment: Environment?
