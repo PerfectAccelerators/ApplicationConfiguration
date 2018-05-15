@@ -29,6 +29,20 @@ public struct DBConfiguration: Codable {
     public let user: String?
     public let pass: String?
     public let driverType: DBDriverType
+    
+    public init(name: String?,
+                host: String?,
+                port: Int?,
+                user: String?,
+                pass: String?,
+                driverType: DBDriverType) {
+        self.name = name
+        self.host = host
+        self.port = port
+        self.user = user
+        self.pass = pass
+        self.driverType = driverType
+    }
 }
 
 public enum DBDriverType: Int, Codable {
