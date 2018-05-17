@@ -1,7 +1,7 @@
 # ApplicationConfiguration
 A simple and codable way to configure a Perfect Application.
 
-** This module is a part of PerfectAcelerators brought to you by the Perfect Community!**
+**This module is a part of PerfectAcelerators brought to you by the Perfect Community!**
 
 ## Installation
 Using Swift Package Manager, add the following to your packages.swift
@@ -66,4 +66,4 @@ Then modify your main.swift:
 To contribute a feature or idea to **ApplicationConfiguration**, fork the project, make your changes and submit a pull request :)
 
 [1]:	https://github.com/realm/jazzy
-[2]:    https://perfectaccelerators.github.io/ApplicationConfiguration/
+[2]:	https://perfectaccelerators.github.io/ApplicationConfiguration/
