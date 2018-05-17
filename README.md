@@ -61,7 +61,7 @@ Then modify your main.swift:
 
 ## Documentation
 [Jazzy][1] generated documentation can be found here:
-[https://perfectaccelerators.github.io/ApplicationConfiguration/ ]()
+[https://perfectaccelerators.github.io/ApplicationConfiguration/]()
 
 ## Contributing
 To contribute a feature or idea to **ApplicationConfiguration**, fork the project, make your changes and submit a pull request :)
