@@ -9,6 +9,7 @@ Using Swift Package Manager, add the following to your packages.swift
 `.package(url: "https://github.com/PerfectAccelerators/ApplicationConfiguration.git", .branch("master"))`
 
 Run `swift package update` and if you use Xcode run `swift package generate-xcodeproj`
+
 ## Usage
 Create a file that includes the configuration for your application, for instance:
 
@@ -58,5 +59,11 @@ Then modify your main.swift:
 	    fatalError("\(error)")
 	}
 
+## Documentation
+[Jazzy][1] generated documentation can be found here:
+[https://perfectaccelerators.github.io/ApplicationConfiguration/ ]()
+
 ## Contributing
 To contribute a feature or idea to **ApplicationConfiguration**, fork the project, make your changes and submit a pull request :)
+
+[1]:	https://github.com/realm/jazzy

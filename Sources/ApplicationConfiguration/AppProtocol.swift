@@ -4,8 +4,8 @@ import PerfectHTTPServer
 import PerfectHTTP
 
 /**
- A protocol to define Applications
- It is already implemented by Application
+ A protocol to define Applications.
+ It is already implemented by Application.
  - see also: Application
 */
 public protocol AppProtocol {

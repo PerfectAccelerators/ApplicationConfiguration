@@ -6,9 +6,9 @@ import PerfectHTTP
 
 /**
  This struct represnts an Application
- with its configuration, routes and filters
+ with its configuration, routes and filters.
  You could use this application or create another
- Application object that complies with AppProtocol
+ Application object that complies with AppProtocol.
  - see also: AppProtocol
 */
 public struct Application: AppProtocol {
