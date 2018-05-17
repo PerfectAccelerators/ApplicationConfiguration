@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/PerfectAccelerators/ApplicationConfiguration"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/DBDriverType.html">DBDriverType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/OS.html">OS</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/AppProtocol.html">AppProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:24ApplicationConfiguration10AppFiltersV">AppFilters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DBConfiguration.html">DBConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:24ApplicationConfiguration07LoggingB0V">LoggingConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:24ApplicationConfiguration16SSLConfigurationV">SSLConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:24ApplicationConfiguration06ServerB0V">ServerConfiguration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='applicationconfiguration' class='heading'>ApplicationConfiguration</h1>
+
+<p>A simple and codable way to configure a Perfect Application.</p>
+
+<p><strong> This module is a part of PerfectAcelerators brought to you by the Perfect Community!</strong></p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>Using Swift Package Manager, add the following to your packages.swift</p>
+
+<p><code>.package(url: &quot;https://github.com/PerfectAccelerators/ApplicationConfiguration.git&quot;, .branch(&quot;master&quot;))</code></p>
+
+<p>Run <code>swift package update</code> and if you use Xcode run <code>swift package generate-xcodeproj</code></p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>Create a file that includes the configuration for your application, for instance:</p>
+<pre class="highlight plaintext"><code>{
+    "server": {
+        "baseURL": "localhost:8181",
+        "baseDomain": "localhost",
+        "port": 8181,
+        "secure": 0
+    },
+    "os": 2,
+    "environment": 1,
+    "ssl": {
+        "port": 443,
+        "originCertificatePath": "",
+        "privateKeyPath": "",
+        "verifyMode": "peer"
+    },
+    "logging": {
+        "requestLoggingPath": "./perfectRequests.log",
+        "logPath": "./perfect.log"
+    },
+    "db": {
+        "name": "perfect",
+        "host": "localhost",
+        "port": 3306,
+        "user": "",
+        "pass": "",
+        "driverType": 1
+    }
+}
+</code></pre>
+
+<p>Then modify your main.swift:</p>
+<pre class="highlight plaintext"><code>import ApplicationConfiguration
+
+#if os(Linux)
+let fileRoot = "/perfect-deployed/Perfect/"
+let filePath = "./config/ApplicationConfigurationLinux.json"
+#endif
+
+let app = Application(name: "Perfect", path: filePath)
+
+do {
+    try HTTPServer.launch(app.server())
+} catch {
+    fatalError("\(error)")
+}
+</code></pre>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>To contribute a feature or idea to <strong>ApplicationConfiguration</strong>, fork the project, make your changes and submit a pull request :)</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/PerfectAccelerators" target="_blank" rel="external">PerfectAccelerators</a>. All rights reserved. (Last updated: 2018-05-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

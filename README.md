@@ -11,6 +11,7 @@ Using Swift Package Manager, add the following to your packages.swift
 Run `swift package update` and if you use Xcode run `swift package generate-xcodeproj`
 ## Usage
 Create a file that includes the configuration for your application, for instance:
+
 	{
 	    "server": {
 	        "baseURL": "localhost:8181",
@@ -41,6 +42,7 @@ Create a file that includes the configuration for your application, for instance
 	}
 
 Then modify your main.swift:
+
 	import ApplicationConfiguration
 	
 	#if os(Linux)

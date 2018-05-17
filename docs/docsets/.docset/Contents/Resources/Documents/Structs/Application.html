@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Application Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Application" class="dashAnchor"></a>
+    <a title="Application Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/PerfectAccelerators/ApplicationConfiguration"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Application Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DBDriverType.html">DBDriverType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OS.html">OS</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AppProtocol.html">AppProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:24ApplicationConfiguration10AppFiltersV">AppFilters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DBConfiguration.html">DBConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:24ApplicationConfiguration07LoggingB0V">LoggingConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:24ApplicationConfiguration16SSLConfigurationV">SSLConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:24ApplicationConfiguration06ServerB0V">ServerConfiguration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Application</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Application</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AppProtocol.html">AppProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>This struct represnts an Application
+with its configuration, routes and filters
+You could use this application or create another
+Application object that complies with AppProtocol</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    see also: AppProtocol
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ApplicationConfiguration0A0V4nameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ApplicationConfiguration0A0V4nameSSvp">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Application name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ApplicationConfiguration0A0V6routes11PerfectHTTP6RoutesVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/routes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ApplicationConfiguration0A0V6routes11PerfectHTTP6RoutesVSgvp">routes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Application routes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">routes</span><span class="p">:</span> <span class="kt">Routes</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ApplicationConfiguration0A0V6configAA0B0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ApplicationConfiguration0A0V6configAA0B0VSgvp">config</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Application configuration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Structs/Configuration.html">Configuration</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ApplicationConfiguration0A0V7filtersAA10AppFiltersVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/filters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ApplicationConfiguration0A0V7filtersAA10AppFiltersVSgvp">filters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Application filters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">filters</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:24ApplicationConfiguration10AppFiltersV">AppFilters</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ApplicationConfiguration0A0VACSS4name_SS4pathtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(name:path:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ApplicationConfiguration0A0VACSS4name_SS4pathtcfc">init(name:path:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>init with only name and configuration file path</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>application name</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>confuration file path - a json file that represents the configs
+### Example configuration JSON:
+<code>
+{
+&quot;server&quot;: {
+&quot;baseURL&quot;: &quot;localhost:8181&quot;,
+&quot;baseDomain&quot;: &quot;localhost&quot;,
+&quot;port&quot;: 8181,
+&quot;secure&quot;: 0
+},
+&quot;os&quot;: 2,
+&quot;environment&quot;: 1,
+&quot;ssl&quot;: {
+&quot;port&quot;: 443,
+&quot;originCertificatePath&quot;: &quot;&quot;,
+&quot;privateKeyPath&quot;: &quot;&quot;,
+&quot;verifyMode&quot;: &quot;peer&quot;
+},
+&quot;logging&quot;: {
+&quot;requestLoggingPath&quot;: &quot;./perfectRequests.log&quot;,
+&quot;logPath&quot;: &quot;./perfect.log&quot;
+},
+&quot;db&quot;: {
+&quot;name&quot;: &quot;perfect&quot;,
+&quot;host&quot;: &quot;localhost&quot;,
+&quot;port&quot;: 3306,
+&quot;user&quot;: &quot;&quot;,
+&quot;pass&quot;: &quot;&quot;,
+&quot;driverType&quot;: 1
+}
+}
+</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ApplicationConfiguration0A0VACSS4name_SS4path11PerfectHTTP6RoutesVSg6routesAA10AppFiltersVSg7filterstcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(name:path:routes:filters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ApplicationConfiguration0A0VACSS4name_SS4path11PerfectHTTP6RoutesVSg6routesAA10AppFiltersVSg7filterstcfc">init(name:path:routes:filters:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>init with name, path, routes and filters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">routes</span><span class="p">:</span> <span class="kt">Routes</span><span class="p">?,</span>
+            <span class="nv">filters</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:24ApplicationConfiguration10AppFiltersV">AppFilters</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>application name</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>confuration file path - a json file that represents the configs</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>routes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a group of routes</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>application filters (request &amp; response)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:24ApplicationConfiguration0A0V6server17PerfectHTTPServer0E0C6ServerVyF"></a>
+                    <a name="//apple_ref/swift/Method/server()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:24ApplicationConfiguration0A0V6server17PerfectHTTPServer0E0C6ServerVyF">server()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configure and return the server</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">server</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">HTTPServer</span><span class="o">.</span><span class="kt">Server</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>HTTPServer.Server</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/PerfectAccelerators" target="_blank" rel="external">PerfectAccelerators</a>. All rights reserved. (Last updated: 2018-05-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
