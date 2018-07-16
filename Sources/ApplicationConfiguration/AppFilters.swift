@@ -9,4 +9,12 @@ public struct AppFilters {
     var request: [(HTTPRequestFilter, HTTPFilterPriority)]?
     /// response filters
     var response: [(HTTPResponseFilter, HTTPFilterPriority)]?
+    
+    /// public initalizer
+    public init(request: [(HTTPRequestFilter, HTTPFilterPriority)]?,
+                response: [(HTTPResponseFilter, HTTPFilterPriority)]?) {
+        
+        self.request = request
+        self.response = response
+    }
 }
