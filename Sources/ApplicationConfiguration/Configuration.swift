@@ -24,7 +24,7 @@ public struct Configuration: Codable {
     /// server configuration including url and port
     let server: ServerConfiguration?
     /// logging configuration includign paths
-    let logging: LoggingConfiguration?
+    public let logging: LoggingConfiguration?
     /// database configuration including host, user, pass,...
     public let db: DBConfiguration?
     /// ssl certificate configurations
@@ -55,9 +55,9 @@ public struct ServerConfiguration: Codable {
 */
 public struct LoggingConfiguration: Codable {
     /// logging path for requests
-    let requestLoggingPath: String?
+    public let requestLoggingPath: String?
     /// logging path
-    let logPath: String?
+    public let logPath: String?
 }
 
 /**
@@ -82,12 +82,12 @@ public struct DBConfiguration: Codable {
     /**
      initialize the database configuration
      - parameters:
-        - name: database name
-        - host: host url
-        - port: port address
-        - user: user name
-        - pass: password
-        - driverType: database driver type such as mySQL
+         - name: database name
+         - host: host url
+         - port: port address
+         - user: user name
+         - pass: password
+         - driverType: database driver type such as mySQL
     */
     public init(name: String?,
                 host: String?,
